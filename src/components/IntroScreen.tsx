@@ -20,7 +20,7 @@ export const IntroScreen: React.FC<IntroScreenProps> = ({ onStart, onToggleSideb
   const [selectedAvatar, setSelectedAvatar] = React.useState(CHAR_AVATAR);
 
   const AVATAR_OPTIONS = [
-    "https://lh3.googleusercontent.com/u/0/d/1laf8bUmZlCgzGqzUOyQNsbkF8TVopAaK"
+    "https://lh3.googleusercontent.com/u/0/d/18I92Px7TQdbjPeJ-ImD6T2QnoPYyWGeb"
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -29,10 +29,10 @@ export const IntroScreen: React.FC<IntroScreenProps> = ({ onStart, onToggleSideb
     
     onStart({
       name: name.trim(),
-      appearance: appearance.trim() || "nhan sắc sắc nước hương trời, thanh khiết hệt như một đóa sen trắng",
+      appearance: appearance.trim() || "nhan sắc sắc nước hương trời, mặn mà, đằm thắm, mong manh nhưng quật cường",
       personality: personality.trim(),
-      age: 20,
-      background: "Con gái rượu của Thầy Đồ (Thầy giáo làng) có tiếng tăm về sự thanh bạch ở Vĩnh Long. Thường gọi là Cô giáo {{user}} hoặc Mợ Hai (sau khi cưới). Năm nay cô 20 tuổi. Được cha dạy chữ Nho và chữ Quốc ngữ từ nhỏ. Đặc biệt có khiếu ngoại ngữ, nói tiếng Pháp lưu loát, tư tưởng tân tiến, mong muốn đi dạy học để khai dân trí."
+      age: 24,
+      background: "Con gái nhà bần nông bủn rỉn, gia cảnh túng thiếu, mang tiếng đũa mốc chòi mâm son khi được gả vào phủ họ Trần bề thế cho Cậu Hai mang bạo bệnh.Góa phụ ở nhờ nhà chồng, đang được mẹ chồng tính chuyện mai mối cho một cậu giáo làng để tái giá. Cô luôn rụt rè, sợ hãi và tìm cách lánh mặt Cậu Ba Sâm vì tưởng hắn ghét mình cay đắng."
     }, selectedAvatar);
   };
 
